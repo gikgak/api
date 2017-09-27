@@ -1,14 +1,20 @@
 /**
  * Group.js
  *
- * @description :: A model definition.  Represents a database table/collection/etc.
+ * @description :: Should be created before lovers
  * @docs        :: https://sailsjs.com/docs/concepts/models-and-orm/models
  */
 
 module.exports = {
 
+  schema : true,
+
   attributes: {
 
+    lovers: {
+      collection: 'lover',
+      via: 'group',
+    },
 
   },
 
