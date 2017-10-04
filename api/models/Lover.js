@@ -20,7 +20,11 @@ module.exports = {
       model: 'group',
       required: true,
     },
-
+	
+	feelings: {
+      collection: 'feelings',
+      via: 'lover',
+    },
   },
 
 };
